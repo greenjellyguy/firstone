@@ -1,0 +1,17 @@
+import math
+import numpy as np
+print("*disclaimer this was originally done in radian if that changes anything sorry*\n\nType Magnitude of the first vector here. \n\n")
+#i doublee checked this on a khan academy practice problem but i could have made a mistake
+firstMag = input()
+print("\nNow type its Direction here. \n")
+firstDir = input()
+print("\nCool, now what is the magnitude of the second vector? \n")
+secondMag =input()
+print("\n Nice, now what is the magnitude of the second one?\n")
+secondDir = input()
+firstTotal = (int(firstDir) * (np.cos(math.radians(int(firstMag)))) + int(secondDir) * (np.cos(math.radians(int(secondMag)))))
+secondTotal = (int(firstDir) * (np.sin(math.radians(int(firstMag)))) + int(secondDir) * (np.sin(math.radians(int(secondMag)))))
+# *equivalent to showing my work because this is the original formula i tried making* 
+#total = (int(firstDirection) * (np.cos(math.radians(int(firstMagnitude)))) + int(secondDir) * (np.cos(math.radians(int(secondDir)))
+print("\n That's pretty cool. Your final direction and magnitude is,\n " + str(firstTotal) + " , " + str(secondTotal))
+print("\n This should be all. Hopefully I did it right.")
